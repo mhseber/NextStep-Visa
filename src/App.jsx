@@ -4,7 +4,15 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="text-4xl bg-black">MH Seber</h1>
+        <h1 className="text-4xl ">MH Seber</h1>
+        <button className="btn btn-neutral">Neutral</button>
+        <button className="btn btn-primary">Primary</button>
+        <button className="btn btn-secondary">Secondary</button>
+        <button className="btn btn-accent">Accent</button>
+        <button className="btn btn-info">Info</button>
+        <button className="btn btn-success">Success</button>
+        <button className="btn btn-warning">Warning</button>
+        <button className="btn btn-error">Error</button>
       </div>
     </>
   );
