@@ -5,6 +5,9 @@ function App() {
     <>
       <div>
         <h1 className="text-4xl ">MH Seber</h1>
+        <h1 className="justify-center text-4xl text-center text-white bg-black ">
+          MH Seber
+        </h1>
         <button className="btn btn-neutral">Neutral</button>
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">Secondary</button>
