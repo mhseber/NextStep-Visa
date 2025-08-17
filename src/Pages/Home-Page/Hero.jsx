@@ -11,7 +11,6 @@ const Hero = () => {
           backgroundImage: `url(${visaBg})`,
         }}
       >
-        {/* Overlay with semi-transparent black */}
         <div className="hero-overlay bg-black/40"></div>
 
         <div className="px-4 text-center hero-content text-neutral-content sm:px-6 lg:px-20">
