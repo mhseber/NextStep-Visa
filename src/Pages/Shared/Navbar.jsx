@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../public/assets/logo.jpeg";
+import { FaClipboardList, FaHome, FaPassport } from "react-icons/fa";
 const Navbar = () => {
   const navLinks = (
     <>
@@ -8,6 +9,7 @@ const Navbar = () => {
           className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
           to="/"
         >
+          <FaHome className="inline mb-1 mr-1" />
           Home
         </NavLink>
       </li>
@@ -16,6 +18,7 @@ const Navbar = () => {
           className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
           to="/visaServices"
         >
+          <FaPassport className="inline mr-1" />
           Visa Services
         </NavLink>
       </li>
@@ -24,6 +27,7 @@ const Navbar = () => {
           className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
           to="/myApplication"
         >
+          <FaClipboardList className="inline mb-1 mr-1" />
           My Application
         </NavLink>
       </li>
@@ -31,13 +35,15 @@ const Navbar = () => {
   );
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="shadow-sm navbar bg-base-100">
-        <div className="navbar-start">
+      <div className="shadow-sm  navbar bg-base-100 sm:px-6 lg:px-20">
+        {/* Navbar Start: Logo + Mobile Dropdown */}
+        <div className="flex items-center navbar-start">
+          {/* Mobile Hamburger */}
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-5 h-5"
+                className="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -49,25 +55,31 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
+            </label>
             <ul
               tabIndex={0}
-              className="p-2 mt-3 shadow menu menu-sm dropdown-content bg-base-100 rounded-box z-1 w-52"
+              className="p-2 mt-3 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
               {navLinks}
             </ul>
           </div>
-          <h1 className="pl-8 text-2xl font-extrabold">
-            <i>
-              NEXTSTEP <span className="text-blue-800">VISA</span>
-            </i>
+
+          {/* Logo / Brand */}
+          <h1 className="pl-4 text-xl font-extrabold sm:text-2xl lg:text-3xl">
+            NEXTSTEP <span className="text-blue-500">VISA</span>
           </h1>
         </div>
+
+        {/* Navbar Center: Desktop Menu */}
         <div className="hidden navbar-center lg:flex">
-          <ul className="gap-4 px-1 font-medium menu-horizontal">{navLinks}</ul>
+          <ul className="flex items-center gap-6 px-1 text-lg font-light lg:text-xl menu-horizontal">
+            {navLinks}
+          </ul>
         </div>
-        <div className="pr-8 navbar-end">
-          <img className="w-20" src={logo} alt="logo" />
+
+        {/* Navbar End: Logo Image */}
+        <div className="navbar-end">
+          <img className="w-10 sm:w-16 lg:w-20" src={logo} alt="logo" />
         </div>
       </div>
     </nav>
