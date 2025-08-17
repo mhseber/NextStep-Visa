@@ -1,16 +1,31 @@
 import { NavLink } from "react-router-dom";
-
+import logo from "../../../public/assets/logo.jpeg";
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/visaServices">Visa Services</NavLink>
+        <NavLink
+          className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
+          to="/visaServices"
+        >
+          Visa Services
+        </NavLink>
       </li>
       <li>
-        <NavLink to="/myApplication">My Application</NavLink>
+        <NavLink
+          className="hover:underline hover:underline-offset-4 hover:decoration-blue-600"
+          to="/myApplication"
+        >
+          My Application
+        </NavLink>
       </li>
     </>
   );
@@ -27,13 +42,12 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {" "}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
+                />
               </svg>
             </div>
             <ul
@@ -43,15 +57,17 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <h1 className="text-2xl ">
-            <i>NEXTSTEP VISA</i>
+          <h1 className="pl-8 text-2xl font-extrabold">
+            <i>
+              NEXTSTEP <span className="text-blue-800">VISA</span>
+            </i>
           </h1>
         </div>
         <div className="hidden navbar-center lg:flex">
-          <ul className="px-1 menu menu-horizontal">{navLinks}</ul>
+          <ul className="gap-4 px-1 font-medium menu-horizontal">{navLinks}</ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Button</a>
+        <div className="pr-8 navbar-end">
+          <img className="w-20" src={logo} alt="logo" />
         </div>
       </div>
     </nav>
