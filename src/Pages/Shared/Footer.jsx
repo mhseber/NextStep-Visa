@@ -1,16 +1,22 @@
 import logo from "../../../public/assets/logo.jpeg";
 const Footer = () => {
   return (
-    <footer className="p-10 bg-blue-500 footer footer-horizontal footer-center text-primary-content">
-      <aside className="text-center">
-        <img className="w-20 rounded-xl" src={logo} alt="logo" />
-        <p className="mb-1 font-bold">NextStep Visa</p>
-        <p className="text-sm">© 2025 NextStep Visa. All rights reserved.</p>
+    <footer className="p-10 footer sm:footer-horizontal bg-neutral text-neutral-content">
+      <aside className="pl-20">
+        <img className="w-20 rounded-xl " src={logo} alt="logo" />
+        <h1 className="text-xl font-extrabold sm:text-2xl lg:text-3xl">
+          NEXTSTEP <span className="text-blue-500">VISA</span>
+        </h1>
+        <aside>
+          <p>
+            Copyright © {new Date().getFullYear()} - All right reserved by
+            NextStep Visa
+          </p>
+        </aside>
       </aside>
-
-      <nav>
+      <nav className="pl-28">
+        <h6 className="footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
-          {/* Example Social Icons */}
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

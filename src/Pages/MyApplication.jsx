@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 const MyApplication = () => {
-  const [loading, setLoading] = useState(true); // Loading state
+  const [loading, setLoading] = useState(true);
   const [formData, setFormData] = useState({
     name: "",
     passport: "",
@@ -12,7 +12,6 @@ const MyApplication = () => {
   const steps = ["Fill Details", "Submit Form", "Verify Documents", "Approval"];
   const [currentStep, setCurrentStep] = useState(0);
 
-  // Loading spinner 3 সেকেন্ড দেখানোর জন্য
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);

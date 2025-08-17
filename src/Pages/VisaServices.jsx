@@ -6,14 +6,14 @@ const VisaServices = () => {
   const [services, setServices] = useState([]);
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("All");
-  const [loading, setLoading] = useState(true); // লোডিং state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
-        // 3 সেকেন্ডের delay দেখানোর জন্য
+
         setTimeout(() => {
           setLoading(false);
         }, 2000);
@@ -29,7 +29,6 @@ const VisaServices = () => {
   });
 
   if (loading) {
-    // লোডিং স্পিনার দেখানো
     return (
       <div className="flex items-center justify-center h-screen">
         <span className="text-blue-600 loading loading-bars loading-xl"></span>

@@ -4,7 +4,6 @@ const TrackApplication = () => {
   const [loading, setLoading] = useState(true); // Loading state
   const [application, setApplication] = useState(null);
 
-  // লোডিং ৩ সেকেন্ড দেখানোর জন্য
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);

@@ -6,7 +6,6 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // 3 সেকেন্ড লোডিং দেখানোর জন্য
     const timer = setTimeout(() => {
       setLoading(false);
     }, 3000);
