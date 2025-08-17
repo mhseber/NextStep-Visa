@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Student Visa",
+    "description": "Apply for student visa with step by step guidance.",
+    "processingTime": "4-6 weeks",
+    "type": "Education",
+    "country": "Canada",
+    "img": "https://www.siecindia.com/uploads/blog/blog_7071b5886b5df93eebed287621d0a73c_1625721613shortblog_eb9bb92e4284e0e784e972ac40280056_1625644289Untitled-1.webp"
+  },
+  {
+    "id": 2,
+    "name": "Work Visa",
+    "description": "Get work visa for your desired country.",
+    "processingTime": "6-8 weeks",
+    "type": "Employment",
+    "country": "Germany",
+    "img": "https://seasonalworkvisa.com/wp-content/uploads/2024/07/Germany-Work-VISA-780x470.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Tourist Visa",
+    "description": "Short stay tourist visa application.",
+    "processingTime": "2-3 weeks",
+    "type": "Travel",
+    "country": "Thailand",
+    "img": "https://www.goindigo.in/content/dam/indigov2/6e-website/header/visa/Mweb-Thailand-630x375.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Business Visa",
+    "description": "Visa for business meetings, conferences, and trade fairs.",
+    "processingTime": "3-5 weeks",
+    "type": "Business",
+    "country": "Singapore",
+    "img": "https://www.3ecpa.com.sg/wp-content/uploads/2023/12/photo-business-compendium-business-visa-for-singapore-1200x630-1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Medical Visa",
+    "description": "Visa for individuals seeking medical treatment abroad.",
+    "processingTime": "2-4 weeks",
+    "type": "Health",
+    "country": "China",
+    "img": "https://www.observerbd.com/2025/05/04/ob_1746362221.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Family Reunion Visa",
+    "description": "Join your family members living abroad with this visa.",
+    "processingTime": "6-10 weeks",
+    "type": "Family",
+    "country": "United Kingdom",
+    "img": "https://assets.publishing.service.gov.uk/media/5a618c3be5274a0a204855a6/s300_UK_Visa.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Transit Visa",
+    "description": "For travelers transiting through a country en route to another destination.",
+    "processingTime": "1-2 weeks",
+    "type": "Travel",
+    "country": "Qatar",
+    "img": "https://visacheckqatar.com/wp-content/uploads/2025/02/QATAR-TRANSIT-VISA-1_11zon.webp"
+  },
+  {
+    "id": 8,
+    "name": "Cultural Exchange Visa",
+    "description": "Participate in cultural exchange or volunteer programs abroad.",
+    "processingTime": "4-6 weeks",
+    "type": "Education",
+    "country": "Japan",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPRVt8zka75D_wSV5cFRzlWY8rPvFJTzrZnaoYinOXWfG-MRDq9kp0jmQa6K1-KE47p4&usqp=CAU"
+  },
+  {
+    "id": 9,
+    "name": "Internship Visa",
+    "description": "Get hands-on experience abroad with an internship visa.",
+    "processingTime": "5-7 weeks",
+    "type": "Employment",
+    "country": "Australia",
+    "img": "https://lh3.googleusercontent.com/proxy/zJVCmjBOO3BXITLYxXBm2LgGYYW_OTmxiGYbLNVeJpfgrGGyc-WWVLKpcu496Q8fN11B6MovkvMp4J8NhpgX4U4xeBGHGbP2mSD0ADYzVjDSDVcqJNyYBA"
+  },
+  {
+    "id": 10,
+    "name": "Retirement Visa",
+    "description": "For retirees planning to live abroad for an extended period.",
+    "processingTime": "8-12 weeks",
+    "type": "Residence",
+    "country": "Spain",
+    "img": "https://www.turkishcouncil.org/wp-content/uploads/2024/06/tc00164.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Dependent Visa",
+    "description": "Visa for dependents of work or student visa holders.",
+    "processingTime": "4-6 weeks",
+    "type": "Family",
+    "country": "United States",
+    "img": "https://iraimmigration.com/upload/service/a7d8031d07966ebba07d234f892042d0.webp"
+  },
+  {
+    "id": 12,
+    "name": "Conference Visa",
+    "description": "For attending academic or professional conferences abroad.",
+    "processingTime": "3-5 weeks",
+    "type": "Business",
+    "country": "France",
+    "img": "https://acko-cms.ackoassets.com/france_visa_7ffb46cab7.png"
+  },
+  {
+    "id": 13,
+    "name": "Research Visa",
+    "description": "For scholars and researchers conducting studies abroad.",
+    "processingTime": "6-8 weeks",
+    "type": "Education",
+    "country": "Netherlands",
+    "img": "https://applyzones.com/uploads/Blog/Student/Ha%20Lan/Ha%20Lan%20En/Netherlands-student-visa-application-procedure-is-a-problem-for-many-international-students.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Religious Visa",
+    "description": "For individuals traveling for religious activities or pilgrimage.",
+    "processingTime": "2-3 weeks",
+    "type": "Special",
+    "country": "Saudi Arabia",
+    "img": "https://vid.alarabiya.net/images/2018/02/21/91827424-37f2-4ecc-b824-b68b5ed925d0/91827424-37f2-4ecc-b824-b68b5ed925d0_16x9_1200x676.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Skilled Worker Visa",
+    "description": "Long-term visa for skilled professionals in high-demand jobs.",
+    "processingTime": "10-14 weeks",
+    "type": "Employment",
+    "country": "New Zealand",
+    "img": "https://media.terratern.com/blog/skilled_migrant_visa_nz_eligibility_application_and_cost_thumbnail_1736757554.webp"
+  },
+  {
+    "id": 16,
+    "name": "Investor Visa",
+    "description": "For individuals making significant investments in a foreign country.",
+    "processingTime": "12-16 weeks",
+    "type": "Business",
+    "country": "United Arab Emirates",
+    "img": "https://www.airzone.ae/wp-content/uploads/2022/06/uae-investor-visa.jpg"
+  }
+]

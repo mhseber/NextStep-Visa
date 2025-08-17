@@ -1,4 +1,6 @@
+import { FaArrowRight } from "react-icons/fa";
 import visaBg from "../../../public/assets/visa-bg.webp";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -24,9 +26,12 @@ const Hero = () => {
               <span className="text-blue-500">Visa</span> makes every step
               simple, fast, and transparent.
             </p>
-            <button className="btn btn-primary btn-lg sm:btn-md md:btn-lg">
-              Get Started
-            </button>
+            <Link to="visaServices">
+              <button className="btn btn-primary btn-lg sm:btn-md md:btn-lg">
+                <FaArrowRight className="text-lg" />
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </div>

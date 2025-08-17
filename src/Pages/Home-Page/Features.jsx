@@ -1,3 +1,5 @@
+import { FaArrowRight } from "react-icons/fa";
+
 const Features = () => {
   const features = [
     {
@@ -32,6 +34,9 @@ const Features = () => {
               <div className="mb-4 text-4xl">{feature.icon}</div>
               <h3 className="mb-2 text-xl font-semibold">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
+              <button className="btn btn-primary sm:btn-md md:btn-lg">
+                <FaArrowRight className="text-lg" />
+              </button>
             </div>
           ))}
         </div>
