@@ -35,12 +35,12 @@ const Navbar = () => {
   );
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="shadow-sm  navbar bg-base-100 sm:px-6 lg:px-20">
+      <div className="flex items-center justify-between shadow-sm navbar bg-base-100 sm:px-6 lg:px-20">
         {/* Navbar Start: Logo + Mobile Dropdown */}
-        <div className="flex items-center navbar-start">
+        <div className="flex items-center gap-4">
           {/* Mobile Hamburger */}
-          <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <div className="dropdown lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-6 h-6"
@@ -65,20 +65,20 @@ const Navbar = () => {
           </div>
 
           {/* Logo / Brand */}
-          <h1 className="pl-4 text-xl font-extrabold sm:text-2xl lg:text-3xl">
+          <h1 className="text-xl font-extrabold sm:text-2xl lg:text-3xl">
             NEXTSTEP <span className="text-blue-500">VISA</span>
           </h1>
         </div>
 
         {/* Navbar Center: Desktop Menu */}
-        <div className="hidden navbar-center lg:flex">
-          <ul className="flex items-center gap-6 px-1 text-lg font-light lg:text-xl menu-horizontal">
+        <div className="hidden lg:flex">
+          <ul className="flex items-center gap-6 px-1 pt-3 text-lg font-light lg:text-xl menu-horizontal">
             {navLinks}
           </ul>
         </div>
 
         {/* Navbar End: Logo Image */}
-        <div className="navbar-end">
+        <div className="flex items-center">
           <img className="w-10 sm:w-16 lg:w-20" src={logo} alt="logo" />
         </div>
       </div>

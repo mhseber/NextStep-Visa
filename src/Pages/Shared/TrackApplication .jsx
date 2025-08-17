@@ -1,7 +1,14 @@
 import { useEffect, useState } from "react";
 
 const TrackApplication = () => {
+  const [loading, setLoading] = useState(true); // Loading state
   const [application, setApplication] = useState(null);
+
+  // লোডিং ৩ সেকেন্ড দেখানোর জন্য
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     const saved = localStorage.getItem("application");
@@ -9,6 +16,14 @@ const TrackApplication = () => {
       setApplication(JSON.parse(saved));
     }
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-black">
+        <span className="text-white loading loading-bars loading-xl"></span>
+      </div>
+    );
+  }
 
   return (
     <section>
